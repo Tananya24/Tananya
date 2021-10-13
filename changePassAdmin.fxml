@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.admin.ChangePassAdmin">
+    <children>
+        <Label layoutX="220.0" layoutY="65.0" text="Change Password">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+            </font>
+            <textFill>
+                <RadialGradient centerX="0.4772727272727273" centerY="0.5728155339805825" radius="0.5">
+                    <stops>
+                        <Stop color="#4d99a8" />
+                        <Stop color="#52d154" offset="1.0" />
+                    </stops>
+                </RadialGradient>
+            </textFill>
+        </Label>
+        <Label layoutX="89.0" layoutY="194.0" prefHeight="38.0" prefWidth="226.0" text="OLD PASSWORD :" textFill="#720e0e">
+            <font>
+                <Font name="Book Antiqua" size="27.0" />
+            </font>
+        </Label>
+        <Label layoutX="86.0" layoutY="292.0" prefHeight="38.0" prefWidth="226.0" text="NEW PASSWORD :" textFill="#650d0d">
+            <font>
+                <Font name="Book Antiqua" size="27.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="newPassField" layoutX="323.0" layoutY="289.0" prefHeight="45.0" prefWidth="309.0" promptText="Enter New Password" />
+        <Button fx:id="backToMainBtn" layoutX="70.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleBackToMainBtnOnAction" prefHeight="45.0" prefWidth="135.0" text="Back" />
+        <Button fx:id="confirmChangePassbtn" layoutX="600.0" layoutY="527.0" mnemonicParsing="false" onAction="#handleComfirmChangePassBtnOnAction" prefHeight="45.0" prefWidth="135.0" text="Comfirm" />
+        <PasswordField fx:id="oldPassField" layoutX="323.0" layoutY="190.0" prefHeight="45.0" prefWidth="309.0" promptText="Enter Old Password" />
+
+    </children>
+</AnchorPane>

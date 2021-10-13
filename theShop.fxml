@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.seller.TheShopController">
+   <children>
+      <Label layoutX="272.0" layoutY="43.0" text="THE SHOP">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.45145631067961167" endY="0.5873786407766991" startX="0.4514563106796116" startY="0.3640776699029126">
+               <stops>
+                  <Stop color="#43cad3" />
+                  <Stop color="#699ccf" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="addBtn" layoutX="57.0" layoutY="496.0" mnemonicParsing="false" onAction="#handleOkBtnOnAction" prefHeight="48.0" prefWidth="131.0" text="ADD PRODUCT" />
+      <Button fx:id="setBtn" layoutX="323.0" layoutY="496.0" mnemonicParsing="false" onAction="#handleOkBtn" prefHeight="48.0" prefWidth="121.0" text="SETTING" />
+      <Button fx:id="outBtn" layoutX="594.0" layoutY="496.0" mnemonicParsing="false" onAction="#handleLoginBtn" prefHeight="48.0" prefWidth="121.0" text="OUT" />
+   </children>
+</AnchorPane>

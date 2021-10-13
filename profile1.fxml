@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.login.ProfileController">
+    <children>
+        <Label layoutX="293.0" layoutY="34.0" text="Profile">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0">
+                    <stops>
+                        <Stop color="#2b6ad7" />
+                        <Stop color="#2cb7bc" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <Label layoutX="58.0" layoutY="180.0" text="1. NAME :  TANANYA ">
+            <font>
+                <Font name="Franklin Gothic Demi Cond" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="239.0" layoutY="180.0" text="SURNAME :   PIYALEARTLUCK">
+            <font>
+                <Font name="Franklin Gothic Demi Cond" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="74.0" layoutY="224.0" text="NICKNAME :  JOY">
+            <font>
+                <Font name="Franklin Gothic Medium" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="239.0" layoutY="224.0" text="ID : 6210451217">
+            <font>
+                <Font name="Franklin Gothic Medium" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="58.0" layoutY="374.0" prefHeight="22.0" prefWidth="181.0" text="2.  NAME :  MAHATTHANA ">
+            <font>
+                <Font name="Franklin Gothic Demi Cond" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="257.0" layoutY="374.0" text="SURNAME :   INTARAKLOM">
+            <font>
+                <Font name="Franklin Gothic Demi Cond" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="66.0" layoutY="421.0" text="NICKNAME :  EURO">
+            <font>
+                <Font name="Franklin Gothic Medium" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="257.0" layoutY="421.0" text="ID : 6210450687">
+            <font>
+                <Font name="Franklin Gothic Medium" size="18.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="163.0" fitWidth="136.0" layoutX="500.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../picture/joy.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="150.0" fitWidth="140.0" layoutX="509.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../picture/euro.jpg" />
+            </image>
+        </ImageView>
+        <Button fx:id="nextBtn" layoutX="640.0" layoutY="533.0" mnemonicParsing="false" onAction="#handleNextBtnOnAction" prefHeight="43.0" prefWidth="136.0" text="NEXT" />
+    </children>
+</AnchorPane>

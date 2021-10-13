@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TableView?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TextField?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.admin.CatagoryPageController">
+    <children>
+        <Label layoutX="262.0" layoutY="25.0" prefHeight="57.0" prefWidth="333.0" text="Catagory Page">
+            <font>
+                <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+            </font>
+            <textFill>
+                <LinearGradient endX="0.43203883495145634" endY="0.8300970873786407" startX="0.4368932038834951" startY="0.25728155339805825">
+                    <stops>
+                        <Stop color="#c96c4b" />
+                        <Stop color="#ccda35" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <TableView fx:id="tableview" layoutX="105.0" layoutY="80.0" prefHeight="400.0" prefWidth="580.0">
+            <columns>
+                <TableColumn fx:id="colCatName" prefWidth="200.0" text="Category Name" />
+                <TableColumn fx:id="colData1" prefWidth="200.0" text="Data1" />
+                <TableColumn fx:id="colData2" prefWidth="200.0" text="Data2" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtcategory" layoutX="95.0" layoutY="495.0" prefHeight="30.0" prefWidth="200.0" promptText="Enter Category Name" />
+        <TextField fx:id="txtdata1" layoutX="305.0" layoutY="495.0" prefHeight="30.0" prefWidth="200.0" promptText="Enter Data1" />
+        <TextField fx:id="txtdata2" layoutX="515.0" layoutY="495.0" prefHeight="30.0" prefWidth="200.0" promptText="Enter Data2" />
+
+        <Button fx:id="OkBtn" layoutX="420.0" layoutY="540.0" mnemonicParsing="false" onAction="#handleOkBtnOnAction" prefHeight="43.0" prefWidth="120.0" text="OK" />
+        <Button fx:id="BackBtn" layoutX="280.0" layoutY="540.0" mnemonicParsing="false" onAction="#handleBackMenuAdminBtn" prefHeight="44.0" prefWidth="120.0" text="Back" />
+    </children>
+</AnchorPane>

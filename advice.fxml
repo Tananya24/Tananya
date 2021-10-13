@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.login.AdviceController">
+   <children>
+      <Label layoutX="294.0" layoutY="49.0" text="ADVICE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="48.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.7102272727272727" centerY="0.7233009708737864" radius="0.5">
+               <stops>
+                  <Stop color="#7eabd0" />
+                  <Stop color="#9f2de1" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <Label layoutX="28.0" layoutY="150.0" text="โปรเเกรมนี้จะเป็นโปรเเกรมในการขายของออนไลน์โดยเเบ่งออกเป็น 3 ส่วนหลักๆ ด้วยกัน ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="207.0" text="1. ส่วนของผู้ดูเเลระบบ เป็นส่วนที่ควบคุมดูเเลระบบจะเเสดงหน้าวันที่ผู้เข้าระะบบเข้าใช้งาน ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="287.0" text="2. ส่วนของผู้ใช้ระบบ หรือเป็นผู้ซื้อสินค้าออนไลน์ โดยจะมีหน้า marketplace ในการเเสดงรายละเอียดสินค้า">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="363.0" text="3.ส่วนของผู้ขายสินค้า เป็นส่วนที่สามารถสร้างร้านค้าตัวเองได้ มีเมนูเพิ่มสินค้า โดยจะเเสดงรายการทั้งหมด">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="402.0" text=" เเสดงภาพ ราคา  สัญลักษณ์เเละสีต่างๆที่เป็นตัวบอกปริมาณสินค้าในคลัง  เช่น ถ้าเป็นสีเเดงคือ ของใกล้หมด">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="okBtn" layoutX="623.0" layoutY="521.0" mnemonicParsing="false" onAction="#handleOkBtnOnAction" prefHeight="46.0" prefWidth="146.0" text="OK" />
+      <Label layoutX="23.0" layoutY="436.0" text=" สีเหลือง คือ ของมีน้อย เเละ สีเขียว คือ ของมีจำนวนมาก">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="321.0" text="เเละภาพของสินค้า จำนวนของสินค้าทั้งหมด ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="247.0" text="โดยเรียงจากวันเวลาเข้าใช้งานล่าสุด">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

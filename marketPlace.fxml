@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.purchaser.MarketPlaceController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="42.0" layoutY="35.0" prefHeight="64.0" prefWidth="341.0" text="Market Place">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="55.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.45" centerY="0.5047619047619047" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.7368420958518982" green="0.5392137765884399" blue="0.19785575568675995" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.007662835249042145">
+                           <color>
+                              <Color red="0.46052631735801697" green="0.3070175349712372" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.03293321281671524" green="0.02669999934732914" blue="0.8899999856948853" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Button layoutX="668.0" layoutY="556.0" mnemonicParsing="false" onAction="#handleBackBtn" text="Back" />
+            <TableView fx:id="Shoplist" layoutX="42.0" layoutY="99.0" prefHeight="421.0" prefWidth="453.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="ShopName" />
+                <TableColumn prefWidth="75.0" text="Item" />
+                  <TableColumn prefWidth="75.0" text="Cost" />
+                  <TableColumn prefWidth="75.0" text="Amount" />
+                  <TableColumn prefWidth="150.4000244140625" text="BuyAmount" />
+                  <TableColumn minWidth="0.0" prefWidth="0.0" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="509.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true" />
+            <Label layoutX="520.0" layoutY="260.0" text="Shop name" />
+            <Label layoutX="520.0" layoutY="291.0" text="Item name" />
+            <Label layoutX="520.0" layoutY="320.0" text="Item cost" />
+            <Label layoutX="616.0" layoutY="259.0" text="Shop name" />
+            <Label layoutX="618.0" layoutY="291.0" text="Item name" />
+            <Label layoutX="616.0" layoutY="320.0" text="Item cost" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
